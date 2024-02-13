@@ -31,7 +31,7 @@ if (correctAnswersCount === 3) {
     console.log(`Congratulations, ${name}!`);
 }
 
-function getGreatestCommonDivisor(a, b) {
+const getGreatestCommonDivisor = (a, b) =>{
     while (b !== 0) {
         const temp = b;
         b = a % b;
