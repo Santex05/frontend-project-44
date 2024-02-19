@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-console.log('brain-calc');
+console.log('brain-prime');
 import hello from '../src/cli.js';
 import { name } from '../src/cli.js';
 import  {getRandomInt} from '../src/cli.js';
