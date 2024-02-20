@@ -12,7 +12,6 @@ export const isEven = () => {
 
     console.log(`Question: ${random}`);
     const answer = readlineSync.question(`Your answer: `)
-    console.log(answer)
     if (random % 2 == 0 && answer === "yes") {
         console.log(`Correct!`)
         counter += 1
