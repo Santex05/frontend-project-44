@@ -43,4 +43,5 @@ export const isEven = () => {
 
 };
 }
-export default isEven;
+isEven()
+
