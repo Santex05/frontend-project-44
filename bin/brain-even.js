@@ -29,15 +29,18 @@ export const isEven = () => {
         console.log(`Let's try again, ${name}!`)
         return
     }
+
     if (counter > 0 && counter < 3) {
         isEven();
+        if (win === true) {
+            console.log(`Congratulations, ${name}!`);
     }
+
     if (counter === 3) {
         win = true
+       
     }
-};
-isEven();
-if (win === true) {
-    console.log(`Congratulations, ${name}!`);
-}
 
+};
+}
+export default isEven;
