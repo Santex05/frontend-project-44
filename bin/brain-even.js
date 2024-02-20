@@ -37,8 +37,8 @@ export const isEven = () => {
         win = true
     }
 };
-
+isEven();
 if (win === true) {
     console.log(`Congratulations, ${name}!`);
 }
-isEven();
+
