@@ -10,7 +10,6 @@ export const isEven = () => {
     console.log('Answer "yes" if the number is even, otherwise answer "no"')
     let random = Math.floor(Math.random() * 100);
 
-    console.log(random)
     console.log(`Question: ${random}`);
     const answer = readlineSync.question(`Your answer: `)
     console.log(answer)
@@ -30,7 +29,6 @@ export const isEven = () => {
         console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.Let's try again, ${name}!`)
         return
     }
-    console.log(counter)
     if (counter > 0 && counter < 3) {
         isEven();
     }
