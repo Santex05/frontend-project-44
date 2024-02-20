@@ -26,7 +26,8 @@ export const isEven = () => {
         counter += 1
     }
     if (random % 2 == 1 && answer === "yes") {
-        console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.Let's try again, ${name}!`)
+        console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.`)
+        console.log(`Let's try again, ${name}!`)
         return
     }
     if (counter > 0 && counter < 3) {
