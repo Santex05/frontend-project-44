@@ -2,6 +2,7 @@
 import readlineSync from 'readline-sync';
 import hello from '../src/cli.js';
 import { name } from '../src/cli.js';
+import { getGreatestCommonDivisor } from '../src/cli.js';
 hello();
 console.log('Find the greatest common divisor of given numbers.');
 
@@ -15,9 +16,9 @@ while (correctAnswersCount < 3) {
 
     console.log(`Question: ${num1} ${num2}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    const correctAnswer = getGreatestCommonDivisor(num1, num2);
+    let correctAnswer = getGreatestCommonDivisor(num1, num2);
 
-    if (userAnswer === String(correctAnswer)) {
+    if (+userAnswer === correctAnswer) {
         console.log('Correct!');
         correctAnswersCount += 1;
     } else {
@@ -30,12 +31,3 @@ while (correctAnswersCount < 3) {
 if (correctAnswersCount === 3) {
     console.log(`Congratulations, ${name}!`);
 }
-
-const getGreatestCommonDivisor = (a, b) => {
-    while (b !== 0) {
-        const temp = b;
-        b = a % b;
-        a = temp;
-    }
-    return a;
-};
