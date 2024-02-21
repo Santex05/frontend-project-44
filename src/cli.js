@@ -17,9 +17,7 @@ const getGreatestCommonDivisor = (num1, num2) => {
     return arr[arr.length - 1];
 };
 getGreatestCommonDivisor(40, 62);
-const getRandomInt = (num) => {
-    return Math.floor(Math.random() * num);
-};
+const getRandomInt = (min = 1, max = 100) => Math.floor(min + Math.random() * (max + 1 - min));
 export { name };
 export default hello;
 export { random, getRandomInt, getGreatestCommonDivisor };

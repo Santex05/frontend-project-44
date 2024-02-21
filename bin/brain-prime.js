@@ -19,8 +19,8 @@ const isPrime = (num) => {
 };
 const getPrimeGame = () => {
     let j = [];
-    const num1 = getRandomInt(100);
-    if (num1 != 0) {
+    const num1 = getRandomInt(1, 3);
+    if (num1 != 1) {
         j.push(num1);
     } else {
         j.push(getRandomInt(100));
