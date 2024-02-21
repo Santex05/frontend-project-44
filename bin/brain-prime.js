@@ -3,6 +3,7 @@ import readlineSync from 'readline-sync';
 import hello from '../src/cli.js';
 import { name } from '../src/cli.js';
 import { getRandomInt } from '../src/cli.js';
+
 hello();
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 console.log(rule);
