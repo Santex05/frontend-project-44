@@ -33,6 +33,7 @@ const getPrimeGame = () => {
         counter += 1;
     } else {
         console.log(`'${r}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
+        console.log(`Let's try again, ${name}!`);
         return;
     }
     if (counter > 0 && counter < 3) {
