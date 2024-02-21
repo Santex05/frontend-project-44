@@ -7,7 +7,7 @@ hello();
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 console.log(rule);
 
-let r;
+let sad;
 let counter = 0;
 const isPrime = (num) => {
     for (let a = 2; a < num; a += 1) {
@@ -32,7 +32,7 @@ const getPrimeGame = () => {
         console.log('Correct!');
         counter += 1;
     } else {
-        console.log(`${r} is wrong answer ;(, Correct answer: ${correctAnswer}`);
+        console.log(`${sad} is wrong answer  Correct answer: ${correctAnswer}`);
         return;
     }
     if (counter > 0 && counter < 3) {
