@@ -1,8 +1,8 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
-console.log('brain-gcd');
 import hello from '../src/cli.js';
 import { name } from '../src/cli.js';
-hello()
+hello();
 console.log('Find the greatest common divisor of given numbers.');
 
 const generateRandomNumber = () => Math.floor(Math.random() * 100) + 1;
@@ -31,11 +31,11 @@ if (correctAnswersCount === 3) {
     console.log(`Congratulations, ${name}!`);
 }
 
-const getGreatestCommonDivisor = (a, b) =>{
+const getGreatestCommonDivisor = (a, b) => {
     while (b !== 0) {
         const temp = b;
         b = a % b;
         a = temp;
     }
     return a;
-}
+};

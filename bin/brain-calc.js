@@ -1,14 +1,14 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
-console.log('brain-calc');
 import hello from '../src/cli.js';
 import { name } from '../src/cli.js';
-hello()
+hello();
 console.log('What is the result of the expression?');
 
 const generateRandomNumber = () => Math.floor(Math.random() * 100);
 const generateRandomOperator = () => ['+', '-', '*'][Math.floor(Math.random() * 3)];
 
-const calculateExpression = (num1, operator, num2) =>{
+const calculateExpression = (num1, operator, num2) => {
     switch (operator) {
         case '+':
             return num1 + num2;
@@ -19,7 +19,7 @@ const calculateExpression = (num1, operator, num2) =>{
         default:
             return null;
     }
-}
+};
 
 let correctAnswersCount = 0;
 

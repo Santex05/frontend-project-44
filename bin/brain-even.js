@@ -1,5 +1,5 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
-console.log('brain-even');
 import hello from '../src/cli.js';
 import { name } from '../src/cli.js';
 hello();
