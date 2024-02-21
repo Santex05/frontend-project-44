@@ -4,7 +4,7 @@ let random;
 const hello = () => {
     console.log('Welcome to the Brain Games!');
     name = readlineSync.question('May I have your name? ');
-    console.log(`Hello, ${name}`);
+    console.log(`Hello, ${name}!`);
 };
 const getGreatestCommonDivisor = (num1, num2) => {
     const smallest = num1 - num2 > 0 ? num2 : num1;
