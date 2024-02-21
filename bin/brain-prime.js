@@ -35,7 +35,6 @@ const getPrimeGame = () => {
         console.log(`${r} is wrong answer ;(, Correct answer: ${correctAnswer}`);
         return;
     }
-    console.log(counter);
     if (counter > 0 && counter < 3) {
         getPrimeGame();
     }
