@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
+// eslint-disable-next-line import/no-named-as-default
 import hello, { name } from '../src/cli.js';
 
 hello();
