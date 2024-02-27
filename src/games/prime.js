@@ -41,7 +41,6 @@ const getPrimeGame = () => {
     getPrimeGame();
   }
 };
-getPrimeGame();
 if (counter === 3) {
   console.log(`Congratulations, ${name}!`);
 }

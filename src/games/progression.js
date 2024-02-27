@@ -46,4 +46,3 @@ const playBrainProgression = () => {
 };
 
 export default playBrainProgression;
-playBrainProgression();
