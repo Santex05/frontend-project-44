@@ -7,7 +7,7 @@ hello();
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 console.log(rule);
 
-let r;
+let x;
 let counter = 0;
 const isPrime = (num) => {
   for (let a = 2; a < num; a += 1) {
@@ -28,12 +28,12 @@ const getPrimeGame = () => {
   }
   const correctAnswer = isPrime(num1);
   console.log(`Question: ${num1}`);
-  r = readlineSync.question('Your answer: ');
-  if (r === correctAnswer) {
+  x = readlineSync.question('Your answer: ');
+  if (x === correctAnswer) {
     console.log('Correct!');
     counter += 1;
   } else {
-    console.log(`'${r}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
+    console.log(`'${x}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
     console.log(`Let's try again, ${name}!`);
     return;
   }
