@@ -39,5 +39,4 @@ const playGcdGame = () => {
 
   console.log(`Congratulations, ${name}!`);
 };
-playGcdGame();
 export default playGcdGame;
