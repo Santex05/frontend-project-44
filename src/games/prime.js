@@ -37,11 +37,11 @@ const getPrimeGame = () => {
     console.log(`Let's try again, ${name}!`);
     return;
   }
+  if (counter === 3) {
+    console.log(`Congratulations, ${name}!`);
+  }
   if (counter > 0 && counter < 3) {
     getPrimeGame();
   }
 };
-if (counter === 3) {
-  console.log(`Congratulations, ${name}!`);
-}
 export default getPrimeGame;
